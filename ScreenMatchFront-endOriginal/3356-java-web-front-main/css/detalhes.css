@@ -1,0 +1,65 @@
+body {
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    background: #070b14;
+    background: radial-gradient(circle at top, rgba(60, 114, 186, 0.16), transparent 22%),
+        linear-gradient(180deg, #06090f 0%, #0c1323 48%, #080c16 100%);
+    background-size: cover;
+    padding: 5em;
+    height: 100%;
+}
+
+
+.ficha img {
+    margin: 0 3em 2em 0;
+}
+
+.ficha-descricao {
+    display: flex;
+}
+
+.ficha-descricao div {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.episodios-lista {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+p {
+    font-size: 22px;
+}
+
+select,
+option {
+    font-size: 24px;
+    padding: 0 1em;
+    margin-bottom: 1em;
+}
+
+select {
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    width: 10%;
+}
+
+@media screen and (max-width: 900px) {
+
+    .ficha-descricao,
+    .episodios-lista {
+        display: block;
+    }
+}

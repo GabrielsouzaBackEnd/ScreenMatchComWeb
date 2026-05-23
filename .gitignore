@@ -1,0 +1,16 @@
+# Arquivos de compilação do Java (Spring)
+target/
+*.class
+*.jar
+*.war
+
+# Arquivos de configuração do IntelliJ
+.idea/
+*.iml
+
+# Arquivos do VS Code
+.vscode/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db

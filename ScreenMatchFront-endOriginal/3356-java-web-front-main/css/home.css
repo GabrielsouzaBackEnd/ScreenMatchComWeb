@@ -1,0 +1,191 @@
+body {
+    min-height: 100vh;
+    background: #070b14;
+    background: radial-gradient(circle at top, rgba(60, 114, 186, 0.16), transparent 22%),
+        linear-gradient(180deg, #06090f 0%, #0c1323 48%, #080c16 100%);
+    color: #ffffff;
+}
+
+h1 {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+select {
+    width: 180px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: white;
+    font-size: 16px;
+    padding: 0.75em 1em;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+option {
+    background-color: rgba(10, 18, 32, 0.97);
+    color: white;
+}
+
+select:focus,
+select:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+h2 {
+    color: white;
+    font-size: clamp(1.4rem, 2vw, 2rem);
+}
+
+main {
+    padding: 1.5em 3em 3em;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    padding: 1.5em 3em 0;
+}
+
+.cabecalho__logo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.cabecalho__logo img {
+    width: 160px;
+    height: auto;
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-size: 40px;
+}
+
+.section {
+    margin-top: 2.5em;
+}
+
+.section__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.lista {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0.5rem 1rem 1rem;
+}
+
+.lista::-webkit-scrollbar {
+    height: 10px;
+}
+
+.lista::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+}
+
+.lista::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.lista li {
+    flex: 0 0 auto;
+    min-width: 260px;
+    scroll-snap-align: start;
+}
+
+.lista li img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transform: translateY(-50%);
+    transition: background 0.2s ease;
+}
+
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.carousel-btn.prev {
+    left: 1rem;
+}
+
+.carousel-btn.next {
+    right: 1rem;
+}
+
+.carousel-btn .material-symbols-outlined {
+    font-size: 28px;
+}
+
+.pesquisa {
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    main {
+        padding: 1.5em 1.5em 2em;
+    }
+
+    .lista li img {
+        width: 220px;
+        height: 340px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .section__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
