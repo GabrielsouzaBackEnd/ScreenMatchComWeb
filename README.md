@@ -58,9 +58,3 @@ Para rodar o ecossistema Full Stack na sua máquina, siga a ordem abaixo:
 3. Abra o arquivo `index.html` diretamente no seu navegador ou utilize a extensão **Live Server** do VS Code para rodar a interface.
 
 ---
-
-## 📝 Submódulos e Detalhes Técnicos
-
-Para informações mais detalhadas sobre como cada camada foi implementada de forma isolada, consulte os arquivos de documentação específicos dentro de cada diretório:
-* [Documentação do Backend](./ScreenMatchBack-end/README.md) *(Opcional se criar um lá depois)*
-* [Documentação do Frontend](./ScreenMatchFront-end/README.md)
